@@ -3,6 +3,10 @@ It is a serverless, microservice-driven web application built using AWS. The Din
 
 The restaurants' metadata is taken from YELP api.
 
+# Web Application:
+
+<img src = "https://user-images.githubusercontent.com/26826339/190945930-e66b874b-fd06-48bc-baca-69b6c36442c2.png"/>
+
 # Services Used:
 1) AWS S3 - To host web application
 2) API Gateway - To setup api.
