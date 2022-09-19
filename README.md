@@ -10,14 +10,15 @@ The restaurants' metadata is taken from YELP api.
 # Services Used:
 1) AWS S3 - To host web application
 2) API Gateway - To setup api.
-3) Serverless (Lambda):  -> LF0 -  performs the chat operation and interacts with Lex.
-                         -> LF1 - A code hook for Lex. Also to manipulate and validate the parameters as well as format the bot's responses.
-4) Lex - Has three intents -> Greeting Intent : Used for greeting user and provides reposne like "Hi there, how can I help?"
-                           -> Thank You Intent : Thanks the user for using the service.
-                           -> Dining Suggestion Intent : Collects information slots from user: Location, Cuisine, Dining Time, Number of People, Phone Number and Email.
+3) Serverless (Lambda): <br>
+                  -> LF0 -  performs the chat operation and interacts with Lex.<br>
+                  -> LF1 - A code hook for Lex. Also to manipulate and validate the parameters as well as format the bot's responses.
+4) Lex - The AWS Lex chatbot has three intents: <br>-> Greeting Intent : Used for greeting user and provides reposne like "Hi there, how can I help?"<br>
+                           -> Thank You Intent : Thanks the user for using the service.<br>
+                           -> Dining Suggestion Intent : Collects information slots from user: Location, Cuisine, Dining Time, No. of People, Phone No. and Email.
 5) SQS - To store user's request. It uses polling to fetch requests.
 6) Elastic Search (Open Search) - To store restaurant ID and cuisine.
-7) Dynamo DB - To store restaurants' information like: : Business ID, Name, Address, Coordinates, Number of Reviews, Rating & Zip Code
+7) Dynamo DB - To store restaurants' information like: Business ID, Name, Address, Coordinates, Number of Reviews, Rating & Zip Code
 8) SNS - To send restaurant suggestions to users via SMS and Email. 
 
 # FLOW:
